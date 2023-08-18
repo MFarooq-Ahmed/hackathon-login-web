@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="center" id="login-box">
+        <div class="container" id='login-div'>
+            <div class="card">
+                <a class="login">Log in</a>
+                <div class="inputBox">
+                    <input type="email" name="login-email" id="login-email" required="">
+                    <span class="user">Username</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" name="login-password" id="login-password" required="">
+                    <span>Password</span>
+                </div>
+
+                <button class="enter" id="login-btn" value="signUp">LOGIN</button>
+                <button id="reg-btn" class="return">Dont have an account? REGISTER</button>
+            </div>
+        </div>
+
+        <div class="login-box"  id="register-div">
+            <a class="register">Register</a>
+            <form>
+                
+              <div class="user-box">
+                <input type="email" id="register-email" name="register-email" required="">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" id="register-password"   name='register-password' required="">
+                <label>Password</label>
+              </div><center>
+              <a href="#" id="register-btn">
+                Register
+                 <span></span>
+              </a></center>
+              <button id="log-btn" class="rturn">Have an account? LOGIN</button>
+            </form>
+          </div>
+          <div id="result-box">
+            <h3 id="result"></h3>
+            <button class="shadow__btn"  id="log-out-btn" >
+                LOGOUT
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
